@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cars Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Autotietokanta</h1>
+      <form id="searchForm">
+        <label for="search">Hae rekisterinumerolla</label>
+        <input type="text" id="search" required />
+        <button type="submit">Hae</button>
+      </form>
+      <p id="searchResult"></p>
+    </header>
+    <main>
+      <h2>Syötä auton tiedot</h2>
+      <form id="addCar">
+        <label
+          >Rekisterinumero: <input type="text" id="licence" required
+        /></label>
+        <label>Valmistaja: <input type="text" id="maker" required /></label>
+        <label>Malli: <input type="text" id="model" required /></label>
+        <label>Omistaja: <input type="text" id="owner" required /></label>
+        <label>Hinta: <input type="number" id="price" required /></label>
+        <label>Väri: <input type="color" id="color" value="#000000" /></label>
+        <button type="submit">Lisää auto</button>
+        <button type="reset">Nollaa</button>
+      </form>
+      <table id="carsTable">
+        <thead>
+          <tr>
+            <th>Rekisterinumero</th>
+            <th>Valmistaja</th>
+            <th>Malli</th>
+            <th>Omistaja</th>
+            <th>Hinta</th>
+            <th>Väri</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
